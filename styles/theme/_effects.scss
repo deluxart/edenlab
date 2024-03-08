@@ -1,0 +1,65 @@
+.white_blocks:not(.crm) .block, .border_blocks:not(.crm) .block {
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    display: block;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+
+
+    h4, h3, .icon, h5 {
+        transition: all .2s ease-in-out;
+    }
+
+    > p {
+        transition: all .2s ease-in-out;
+        top: 100%;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    @media (min-width: $tb_bp) {
+        &:hover {
+            .icon {
+                margin-top: -96px;
+                transform: translateY(-10px);
+
+                @media (max-width: $tb_bp) {
+                    margin-top: -68px;
+                }
+            }
+
+            h4, h3, h5 {
+                margin-bottom: 10px !important;
+            }
+
+            p {
+                top: 0;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &.active {
+        @media (max-width: $tb_bp) {
+            .icon {
+                margin-top: -96px;
+                transform: translateY(-15px);
+
+                @media (max-width: $tb_bp) {
+                    margin-top: -68px;
+                }
+            }
+
+            h4, h3, h5 {
+                margin-bottom: 10px !important;
+            }
+
+            p {
+                top: 0;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}

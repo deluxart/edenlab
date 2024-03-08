@@ -1,0 +1,61 @@
+#footer {
+    background: #081123;
+    color: #FFFFFF;
+
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+
+        @media (max-width: $tb_bp) {
+            font-size: 14px;
+        }
+    }
+
+    .content {
+        padding: 30px 0;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-gap: 20px;
+
+        @media (max-width: $tb_bp) {
+            font-size: 14px;
+        }
+
+        > div {
+            font-family: CriteriaCF, sans-serif;
+
+            @media (max-width: $tb_bp) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .kodjin {
+        text-align: center;
+        background: #050917;
+        color: white;
+        font-size: 16px;
+
+        p {
+            color: white;
+            margin: 0;
+            padding: 14px 15px;
+            opacity: 0.5;
+            font-size: 16px;
+
+            @media (max-width: $tb_bp) {
+                font-size: 14px;
+            }
+
+            a {
+                color: white;
+                text-decoration: underline;
+                font-size: 16px;
+
+                @media (max-width: $tb_bp) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

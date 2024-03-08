@@ -1,0 +1,166 @@
+.privacy, .was-page {
+    .content {
+        .blocks {
+            display: grid;
+            gap: 40px;
+            padding-bottom: 80px;
+
+            .block {
+                &:not(:last-child) {
+                    padding-bottom: 40px;
+                    border-bottom: 1px solid #E8E8E8;
+                }
+
+                blockquote {
+                    background: #F9FCFF;
+                    padding: 16px;
+                    line-height: 160%;
+
+                p {
+                    line-height: 160%;
+                }
+
+                    strong {
+                        color: #0142F1;
+                    }
+                }
+            }
+        }
+
+        .text {
+            > p, > ul, > ol, > div, > blockquote, > h1, > h2, > h3, > h4, > h5, > h6, > figure, > em {
+                line-height: 160%;
+                margin-bottom: 20px;
+                color: #000000;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            h4 {
+                &.heading {
+                    font-weight: 500;
+                    line-height: 120.7%;
+                    text-transform: uppercase;
+                }
+            }
+
+            > ul {
+                list-style: disc;
+                margin-left: 16px;
+                display: grid;
+                grid-template-columns: auto 1fr;
+                grid-column-gap: 60px;
+
+                li {
+                    position: relative;
+                    line-height: 160%;
+
+                }
+            }
+
+            > ol {
+                counter-reset: itemnum;
+
+                > li {
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: minmax(22px, auto) 1fr;
+                    line-height: 160%;
+
+                    &:before {
+                        counter-increment: itemnum;
+                        content: counter(itemnum) "";
+                        color: #0142F1;
+                    }
+                }
+            }
+
+            > ul {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            table {
+                width: 100%;
+                text-align: left;
+                border-collapse: collapse;
+                border: 1px solid #E8E8E8;
+
+                @media (max-width: 992px) {
+                    overflow: hidden;
+                    overflow-x: scroll;
+                    display: block;
+                }
+
+                td, th {
+                    border-bottom: 1px solid #E8E8E8;
+                    padding: 14px;
+
+                    @media (max-width: 992px) {
+                        font-size: 14px;
+                    }
+                }
+
+                tbody {
+                    > tr {
+                        &:nth-child(odd) {
+                            td {
+                                background: #F7F7F7;
+                            }
+                        }
+                    }
+                }
+
+                thead {
+                    background: #FAFAFA;
+
+                    th {
+                        font-weight: bold;
+                        color: #000000;
+                        text-transform: uppercase;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.was-page {
+    .content-text {
+        padding: 80px 0;
+    }
+}
+
+.faq_item {
+    position: relative;
+    padding-left: 20px;
+
+    h5 {
+        &.head {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: none;
+            margin-bottom: 4px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: -20px;
+                top: 6px;
+                width: 8px;
+                height: 10px;
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.68243 10.5C7.68243 10.5 10.294 1.87666 0.538593 0.5C0.538593 0.5 -2.91803 9.70302 7.68243 10.5Z' fill='%230142F1'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .cont {
+        line-height: 160%;
+    }
+}

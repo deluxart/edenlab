@@ -1,0 +1,80 @@
+.searchandfilter {
+    > ul {
+        display: inline-flex;
+
+        li {
+            &.sf-field-reset {
+                display: none;
+            }
+        }
+
+        a {
+            &.search-filter-reset {
+                display: inline-flex;
+                font-size: 20px;
+                line-height: 110%;
+                //padding: 0;
+                background: #FFFFFF;
+                border-radius: 16px;
+                border: 2px solid #fff;
+                cursor: pointer;
+                margin: 4px;
+                transition: 0.3s all;
+                padding: 12px 16px;
+                font-family: ArialNew, sans-serif;
+                text-decoration: none;
+
+                @media (max-width: 992px) {
+                    padding: 8px 12px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .sf-field-category {
+        > ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            > li {
+                display: inline-flex;
+                font-size: 22px;
+                line-height: 110%;
+                padding: 0;
+                background: #FFFFFF;
+                border-radius: 16px;
+                border: 2px solid #fff;
+                cursor: pointer;
+                margin: 4px;
+                transition: 0.3s all;
+
+                @media (max-width: $tb_bp) {
+                    font-size: 14px;
+                }
+
+                &:hover:not(.sf-option-active) {
+                    background: $orange;
+                    border-color: $orange;
+                }
+
+                .sf-input-checkbox {
+                    display: none;
+                }
+
+                label {
+                    padding: 12px 16px;
+                    cursor: pointer;
+
+                    @media (max-width: $tb_bp) {
+                        padding: 8px 12px;
+                    }
+                }
+
+                &.sf-option-active {
+                    background: transparent;
+                    border-color: $dark;
+                }
+            }
+        }
+    }
+}

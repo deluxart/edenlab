@@ -1,0 +1,185 @@
+.form {
+    br {
+        display: none;
+    }
+
+    &__sent {
+        display: none;
+
+        > div {
+            position: relative;
+            min-height: 560px;
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: $tb_bp) {
+                min-height: 400px;
+            }
+
+            > div {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+
+                h3 {
+                    max-width: 470px;
+                    margin-bottom: 16px;
+                    font-size: 56px;
+                    line-height: 110%;
+
+                    @media (max-width: $tb_bp) {
+                        font-size: 30px;
+                        line-height: 110%;
+                    }
+                }
+
+                > p {
+                    font-size: 18px;
+                    line-height: 130%;
+                    margin: 0 !important;
+                    color: #081123;
+                }
+            }
+        }
+    }
+
+    .wpcf7-form {
+        p {
+            max-width: 100% !important;
+        }
+    }
+
+    form {
+
+        input[type=text], input[type=email], textarea {
+            width: 100%;
+            border-radius: 0;
+            display: block;
+            border: 0;
+            border-bottom: 2px solid $dark;
+            padding: 20px 0;
+            font-size: 24px;
+            font-family: CriteriaCF, sans-serif;
+
+            @media (max-width: $tb_bp) {
+                font-size: 18px;
+            }
+
+            &::placeholder {
+                @media (max-width: $tb_bp) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type=submit] {
+            margin-top: 30px;
+            font-size: 20px;
+
+            @media (max-width: $tb_bp) {
+                font-size: 18px;
+                width: 100%;
+                padding: 14px 50px;
+            }
+        }
+
+        .field {
+            position: relative;
+            &__title {
+                position: absolute;
+                left: 0;
+                top: 39px;
+                transform: translateY(-50%);
+                transition: 0.3s all;
+                z-index: 2;
+                pointer-events: none;
+                opacity: 0.5;
+                font-size: 24px;
+                line-height: 110%;
+                font-family: CriteriaCF, sans-serif;
+
+                @media (max-width: $tb_bp) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .field {
+            &.active {
+                .field__title {
+                    top: 12px;
+                    transition: 0.2s all;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.wpcf7 {
+    &-not-valid-tip {
+        font-size: 12px;
+    }
+
+    form {
+        .wpcf7-response-output {
+            font-size: 16px;
+        }
+    }
+
+    &-spinner {
+        position: absolute;
+    }
+}
+
+//.form__sent {
+//    display: none;
+//}
+
+//#contact_us {
+    .wpcf7 {
+        form {
+            .wpcf7-response-output {
+                display: none;
+            }
+        }
+    }
+//}
+
+.codedropz-upload-inner {
+    display: inline-flex;
+
+    h4, span, .codedropz-btn-wrap {
+        display: inline-flex;
+        line-height: normal;
+        align-items: center;
+        font-size: 21px;
+        font-family: ArialNew, sans-serif;
+    }
+
+    h4 {
+        padding-right: 7px;
+    }
+
+    span {
+        padding-right: 7px;
+        line-height: normal;
+    }
+
+    a {
+        text-decoration: underline !important;
+        font-size: 21px;
+        line-height: normal;
+        font-family: ArialNew, sans-serif;
+    }
+}
+
+.codedropz-upload-handler {
+    margin: 20px 0 0 0;
+    border-radius: 0;
+}

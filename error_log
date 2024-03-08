@@ -1,0 +1,20 @@
+[19-Feb-2022 19:56:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php on line 10
+[20-Feb-2022 23:36:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php on line 10
+[23-Feb-2022 14:24:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php on line 10
+[24-Feb-2022 17:30:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php on line 10
+[25-Feb-2022 18:53:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/404.php on line 10

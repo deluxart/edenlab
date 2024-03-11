@@ -1,0 +1,12 @@
+.page-template-page-join {
+    #subscribe {
+        .form {
+            input[type="email"], input[type="text"] {
+                border: 0;
+                background: transparent;
+                border-bottom: 2px solid #081123;
+                border-radius: 0;
+            }
+        }
+    }
+}

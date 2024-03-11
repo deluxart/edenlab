@@ -145,7 +145,7 @@ add_action( 'widgets_init', 'edenlab_widgets_init' );
 function edenlab_scripts() {
     wp_enqueue_style( 'edenlab-style', get_stylesheet_uri(), array(), _S_VERSION );
     wp_style_add_data( 'edenlab-style', 'rtl', 'replace' );
-    wp_enqueue_style( 'edenlab-styles', get_template_directory_uri() . '/styles/style.css?111', array(), '111' );
+    wp_enqueue_style( 'edenlab-styles', get_template_directory_uri() . '/styles/style.css?1121', array(), '1121' );
 //    wp_enqueue_style( 'edenlab-blocks', get_template_directory_uri() . '/blocks/blocks.css', array(), '323230123998' );
     wp_enqueue_style( 'edenlab-liMarquee', get_template_directory_uri() . '/assets/libs/liMarquee.css', array(), _S_VERSION );
     wp_enqueue_style( 'edenlab-swiper', get_template_directory_uri() . '/assets/libs/swiper.min.css', array(), '555' );
@@ -266,6 +266,11 @@ function mycustom_wp_footer() {
                 jQuery('#contact_us .form__sent').show();
             }
 
+            if ( '2163' == event.detail.contactFormId ) {
+                jQuery('#subscribe .form__wrap').hide();
+                jQuery('#subscribe .form__sent').show();
+            }
+
         }, false );
     </script>
     <?php
@@ -319,3 +324,10 @@ function your_special_mail_tag( $output, $name, $html ) {
     return $output;
 }
 
+function shapeSpace_enable_gutenberg_post_ids($can_edit, $post) {
+    if (empty($post->ID)) return $can_edit;
+    if (2157 === $post->ID) return true;
+    return $can_edit;
+}
+
+add_filter('use_block_editor_for_post', 'shapeSpace_enable_gutenberg_post_ids', 10, 2);

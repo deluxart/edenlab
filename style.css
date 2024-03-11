@@ -870,3 +870,16 @@ a:active {
 .grecaptcha-badge { 
     visibility: hidden;
 }
+
+.page-template-page-join #subscribe .form input[type=email], .page-template-page-join #subscribe .form input[type=text] {
+	border: 0;
+	background: transparent;
+	border-bottom: 2px solid #081123;
+	border-radius: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.page-template-page-join #subscribe .form form input[type="submit"] {
+	margin-top: 30px;
+}

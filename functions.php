@@ -161,6 +161,7 @@ function edenlab_scripts() {
     wp_enqueue_script( 'edenlab-liMarquee', get_template_directory_uri() . '/js/jquery.liMarquee.js', array(), '00333998877', true );
     wp_enqueue_script( 'edenlab-scrollbar', get_template_directory_uri() . '/js/scrollBar.js', array(), '00333998877', true );
     wp_enqueue_script( 'edenlab-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'edenlab-exitintent', get_template_directory_uri() . '/assets/js/jquery.exitintent.min.js', array(), _S_VERSION, true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
@@ -271,6 +272,17 @@ function mycustom_wp_footer() {
                 jQuery('#subscribe .form__sent').show();
             }
 
+            if ( '856' == event.detail.contactFormId ) {
+                var redirectUrl = <?php
+                    $pdfFile = get_field('white_paper_url', 'option');
+                    echo $pdfFile ? "'" . esc_url($pdfFile) . "'" : "'https://edenlab.io/wp-content/uploads/2024/08/kodjin-interoperability-suite-07-24.pdf'";
+                    ?>;
+                location.href = redirectUrl;
+                jQuery('.exitModal-popup.opened-modal .exitModal-close').click();
+                jQuery('#whitepaper_modal .form__wrap').hide();
+                jQuery('#whitepaper_modal .form__sent').show();
+            }
+
         }, false );
     </script>
     <?php
@@ -303,15 +315,33 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-wpcf7_add_shortcode('country_by_ip', 'custom_cf7_country_by_ip', true);
-function custom_cf7_country_by_ip( $tag='' ) {
+wpcf7_add_form_tag('country_by_ip', 'custom_cf7_country_by_ip', true);
+
+function custom_cf7_country_by_ip($tag='') {
     $ip = $_SERVER['REMOTE_ADDR'];
-    $country = '';
-    $city = '';
-    $details = json_decode(file_get_contents("https://ipinfo.io/{$ip}/json"));
-    if(isset($details->country)) { $country = $details->country; $city = $details->city; };
-    return ( ($country)?($city.', '.$country):'' );
+    $cache_key = 'geo_info_' . $ip;
+    $details = get_transient($cache_key);
+
+    if ($details === false) {
+        $response = wp_remote_get("https://ipinfo.io/{$ip}?token=7a520c61f98367");
+        
+        if (is_wp_error($response)) {
+            return '';
+        }
+
+        $body = wp_remote_retrieve_body($response);
+        $details = json_decode($body);
+
+        // Кэшировать результат на 1 час
+        set_transient($cache_key, $details, HOUR_IN_SECONDS);
+    }
+
+    $country = isset($details->country) ? $details->country : '';
+    $city = isset($details->city) ? $details->city : '';
+
+    return ($country) ? ($city . ', ' . $country) : '';
 }
+
 
 add_action( 'wpcf7_init', 'custom_add_form_tag_my_source' );
 function custom_add_form_tag_my_source() {

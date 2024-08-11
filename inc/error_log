@@ -1,0 +1,4 @@
+[31-May-2024 09:25:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/inc/cases.php:2
+Stack trace:
+#0 {main}
+  thrown in /home2/kodjinco/domains/edenlab.io/wp-content/themes/edenlab/inc/cases.php on line 2

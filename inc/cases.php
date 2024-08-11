@@ -185,7 +185,7 @@ function cases_listing_home_shortcode( $atts ) {
 //    $ch = 0;
 
     if ( $query->have_posts() ) {
-        while ( $query->have_posts() ) : $query->the_post(); $ch++;
+        while ( $query->have_posts() ) : $query->the_post();
             get_template_part( 'template-parts/case-card-home', get_post_format() );
         endwhile;
 

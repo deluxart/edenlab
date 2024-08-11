@@ -72,7 +72,9 @@
                         <div class="form__wrap">
                             <h2>Kodjin Whitepaper</h2>
                             <p>Please, leave your email to get Kodjin White Paper</p>
-                            <?php echo do_shortcode('[contact-form-7 id="856" title="Contact form - Promo block"]') ?>
+                            <div class="edenlab_contact_from" data-name="wp_suite" data-file="<?php if ( get_field( 'default_wp_file', 'option' ) ) : ?><?php the_field( 'default_wp_file', 'option' ); ?><?php endif; ?>" data-file-name="<?php if ( get_field( 'default_wp_name', 'option' ) ) : ?><?php the_field( 'default_wp_name', 'option' ); ?><?php endif; ?>">
+                                <?php echo do_shortcode('[contact-form-7 id="856" title="Contact form - Promo block"]') ?>
+                            </div>
                         </div>
                         <div class="form__sent">
                             <div>
@@ -127,7 +129,9 @@
                     <img src="https://kodjin.com/wp-content/uploads/2023/01/wp_image-1.png" alt="" />
                 </div>
                 <div class="form">
-                    <?php echo do_shortcode('[contact-form-7 id="856" title="Contact form - Promo block"]') ?>
+                    <div class="edenlab_contact_from" data-name="wp_suite" data-file="<?php if ( get_field( 'default_wp_file', 'option' ) ) : ?><?php the_field( 'default_wp_file', 'option' ); ?><?php endif; ?>" data-file-name="<?php if ( get_field( 'default_wp_name', 'option' ) ) : ?><?php the_field( 'default_wp_name', 'option' ); ?><?php endif; ?>">
+                        <?php echo do_shortcode('[contact-form-7 id="856" title="Contact form - Promo block"]') ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -204,6 +208,27 @@
 
 
                 const forms = document.querySelectorAll('.wpcf7');
+                const form_wp = document.querySelectorAll('.edenlab_contact_from');
+
+                form_wp.forEach(function(form) {
+                    const dataNameAttribute = form.getAttribute('data-name'); // Form name
+                    const dataFileUrl = form.getAttribute('data-file'); // Form name
+                    const dataFileName = form.getAttribute('data-file-name'); // Form name
+
+                    console.log(dataNameAttribute, 'dataNameAttribute');
+                    console.log(dataFileUrl, 'dataFileUrl');
+                    console.log(dataFileName, 'dataFileName');
+
+                    if (dataNameAttribute) {
+                        const inputField_pdf = form.querySelector('input[name="pdf_file"]'); // PDF_File field
+                        const inputField_pdfName = form.querySelector('input[name="pdf_name"]'); // PDF_Name field
+
+                        if (inputField_pdf) {
+                            inputField_pdf.setAttribute('value', dataFileUrl);
+                            inputField_pdfName.setAttribute('value', dataFileName);
+                        }
+                    }
+                });
 
                 forms.forEach(function(form) {
                     const inputField_current_page_url = form.querySelector('input[name="current_page_url"]');
@@ -227,7 +252,7 @@
                         fetch('https://ipinfo.io/json')
                             .then(response => response.json())
                             .then(data => {
-                                countryVal.value = data.country;
+                                countryVal.value = `${data.city} (${data.country}) `;
                             })
                             .catch(error => {
                                 console.error("Error fetching IP address:", error);
@@ -254,109 +279,6 @@
                         last_landing_page.setAttribute('value', sbjs.get.current_add.ep);
                     }
                 });
-
-                //
-                //
-                // const countryInfo = document.querySelector("#country");
-                // const countryInfo_about = document.querySelector("#country_about");
-                // const countryInfo_subscribe = document.querySelector("#country_subscribe");
-                //
-                //
-                // const country = document.querySelector("#countryVal");
-                // const country_about = document.querySelector("#countryVal_about");
-                // const country_subscribe = document.querySelector("#countryVal_subscribe");
-                //
-                // const hidId = document.querySelector("#hidId");
-                // const hidId_about = document.querySelector("#hidId_about");
-                // const hidId_subscribe = document.querySelector("#hidId_subscribe");
-                //
-                // const first_source = document.querySelector("#first_source");
-                // const first_source_about = document.querySelector("#first_source_about");
-                // const first_source_subscribe = document.querySelector("#first_source_subscribe");
-                //
-                // const last_source = document.querySelector("#last_source");
-                // const last_source_about = document.querySelector("#last_source_about");
-                // const last_source_subscribe = document.querySelector("#last_source_subscribe");
-                //
-                // const first_page = document.querySelector("#first_page");
-                // const first_page_about = document.querySelector("#first_page_about");
-                // const first_page_subscribe = document.querySelector("#first_page_subscribe");
-                //
-                // const last_landing_page = document.querySelector("#last_landing_page");
-                // const last_landing_page_about = document.querySelector("#last_landing_page_about");
-                // const last_landing_page_subscribe = document.querySelector("#last_landing_page_subscribe");
-                //
-                // if (!!country) {
-                //     country.value = countryInfo.textContent;
-                // }
-                //
-                // if (!!country_about) {
-                //     country_about.value = countryInfo_about.textContent;
-                // }
-                //
-                // if (!!country_subscribe) {
-                //     country_subscribe.value = countryInfo_subscribe.textContent;
-                // }
-                //
-                // if (!!hidId) {
-                //     hidId.value = greet();
-                // }
-                //
-                // if (!!hidId_about) {
-                //     hidId_about.value = greet();
-                // }
-                //
-                // if (!!hidId_subscribe) {
-                //     hidId_subscribe.value = greet();
-                // }
-                //
-                // if (!!first_source) {
-                //     first_source.value = `${sbjs.get.first.src} - ${sbjs.get.first.mdm} - ${sbjs.get.first.cmp} - ${sbjs.get.first.trm}`;
-                // }
-                //
-                // if (!!first_source_about) {
-                //     first_source_about.value = `${sbjs.get.first.src} - ${sbjs.get.first.mdm} - ${sbjs.get.first.cmp} - ${sbjs.get.first.trm}`;
-                // }
-                //
-                // if (!!first_source_subscribe) {
-                //     first_source_subscribe.value = `${sbjs.get.first.src} - ${sbjs.get.first.mdm} - ${sbjs.get.first.cmp} - ${sbjs.get.first.trm}`;
-                // }
-                //
-                // if (!!last_source) {
-                //     last_source.value = `${sbjs.get.current.src} - ${sbjs.get.current.mdm} - ${sbjs.get.current.cmp} - ${sbjs.get.current.trm}`;
-                // }
-                //
-                // if (!!last_source_about) {
-                //     last_source_about.value = `${sbjs.get.current.src} - ${sbjs.get.current.mdm} - ${sbjs.get.current.cmp} - ${sbjs.get.current.trm}`;
-                // }
-                //
-                // if (!!last_source_subscribe) {
-                //     last_source_subscribe.value = `${sbjs.get.current.src} - ${sbjs.get.current.mdm} - ${sbjs.get.current.cmp} - ${sbjs.get.current.trm}`;
-                // }
-                //
-                // if (!!first_page) {
-                //     first_page.value = sbjs.get.first_add.ep;
-                // }
-                //
-                // if (!!first_page_about) {
-                //     first_page_about.value = sbjs.get.first_add.ep;
-                // }
-                //
-                // if (!!first_page_subscribe) {
-                //     first_page_subscribe.value = sbjs.get.first_add.ep;
-                // }
-                //
-                // if (!!last_landing_page) {
-                //     last_landing_page.value = sbjs.get.current_add.ep;
-                // }
-                //
-                // if (!!last_landing_page_about) {
-                //     last_landing_page_about.value = sbjs.get.current_add.ep;
-                // }
-                //
-                // if (!!last_landing_page_subscribe) {
-                //     last_landing_page_subscribe.value = sbjs.get.current_add.ep;
-                // }
             }, 5000);
 
         });

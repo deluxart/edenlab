@@ -70,7 +70,7 @@ $content = get_the_content();
                                 $author_id = $post->post_author;
                                 mt_profile_img( $author_id, array(
                                     'size' => 'thumbnail',
-                                    'attr' => array( 'alt' => $author_id->display_name ),
+                                    'attr' => array( 'alt' => $author_id ),
                                     'echo' => true )
                                 );
                             }
@@ -129,7 +129,7 @@ $content = get_the_content();
                                 $author_id = $post->post_author;
                                 mt_profile_img( $author_id, array(
                                         'size' => 'thumbnail',
-                                        'attr' => array( 'alt' => $author_id->display_name ),
+                                        'attr' => array( 'alt' => $author_id ),
                                         'echo' => true )
                                 );
                             }

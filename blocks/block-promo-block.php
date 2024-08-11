@@ -27,7 +27,9 @@
                         <div class="form__wrap">
                             <h2>Kodjin Whitepaper</h2>
                             <p>Please, leave your email to get Kodjin White Paper</p>
+                            <div class="edenlab_contact_from" data-name="wp_suite" data-file="<?php if ( get_field( 'default_wp_file', 'option' ) ) : ?><?php the_field( 'default_wp_file', 'option' ); ?><?php endif; ?>" data-file-name="<?php if ( get_field( 'default_wp_name', 'option' ) ) : ?><?php the_field( 'default_wp_name', 'option' ); ?><?php endif; ?>">
                             <?php echo do_shortcode('[contact-form-7 id="856" title="Contact form - Promo block"]') ?>
+                            </div>
                         </div>
                         <div class="form__sent">
                             <div>

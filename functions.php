@@ -272,16 +272,11 @@ function mycustom_wp_footer() {
                 jQuery('#subscribe .form__sent').show();
             }
 
-            //if ( '856' == event.detail.contactFormId ) {
-            //    var redirectUrl = <?php
-            //        $pdfFile = get_field('white_paper_url', 'option');
-            //        echo $pdfFile ? "'" . esc_url($pdfFile) . "'" : "'https://edenlab.io/wp-content/uploads/2024/08/kodjin-interoperability-suite-07-24.pdf'";
-            //        ?>//;
-            //    location.href = redirectUrl;
-            //    jQuery('.exitModal-popup.opened-modal .exitModal-close').click();
-            //    jQuery('#whitepaper_modal .form__wrap').hide();
-            //    jQuery('#whitepaper_modal .form__sent').show();
-            //}
+            if ( '856' == event.detail.contactFormId ) {
+                jQuery('.exitModal-popup.opened-modal .exitModal-close').click();
+                jQuery('#whitepaper_modal .form__wrap').hide();
+                jQuery('#whitepaper_modal .form__sent').show();
+            }
 
         }, false );
     </script>

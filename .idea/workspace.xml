@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="302053f1-dc7b-472b-88df-37edf211ae25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Criteriacf-bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Criteriacf-extralight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Criteriacf-light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/head_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/head_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/pages/_new_home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new-footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new-header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-new-home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/_new_home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/theme/_mb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template-parts/new-contact-us-section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stylelintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/12122021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/1228449.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/1380581.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/14865584.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/16669241.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/17016832.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/17755202.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/178582.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/18677354.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/19761420.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/1fdf5981-2d9d-4315-bb84-4590d5c5b989.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/23146393.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/25564864.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/27722486.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/28616219.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/29775873.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/29aa8cd8-de97-42b8-a370-f901be43e18a.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/3112309.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/316.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/318.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/32598811.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/33770367.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/3580607.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/4365899.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/43d010fa-71ac-44e3-8475-bb77d95c331c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/465125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/47104575.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/507615.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/5378891.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/6134547.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/6383947.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/64011067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/6402969.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/6883793.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/7002f57b-bf16-4640-8373-2c4cfcfa7f8c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/7017767.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/7843281.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/8186664.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/82f338dd-b0a6-41bc-9a86-58aaa9df217b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/8317101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/8358236.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/8737ccb7-3b5d-40ca-ae36-6a904047caa4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/8a6844f5-a6ed-4630-9177-4fa5d0b7dd47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/95736b64-de90-4fcd-bae9-a827091a247d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/DMDOlAUhmktLyEODCMBR.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/KDpgvguMpGfqaHPjicRK.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/XuVpGqBFxXplzvLjJBZB.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/ad510b94-5f85-4b30-b929-2e3a34ad673c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/analytics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/b9d17ebc-2af1-4926-ba1b-c1376ddaa479.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/ba0958ce-b194-4910-84de-7e3274742dbb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/box-ad575b5823df97fc9725e14a57070642.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/d7bc5cdf-07f9-4ddf-8135-78d3cc6ca009.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/dcb1b8f8-becd-4f90-ba32-574260a7b18d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/demo_002.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/expand.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/fef2f3d5-9326-48e3-a8f3-a99584efd425.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/hotjar-473408.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/index-5fa2b130.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/index-e2ecceb8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/index_002.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/js_002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/mZBWtboYbnMkTBaRIuWQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/nBVXkrFdWHxbZlmMbsaH.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/polyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/preact-incoming-feedback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/unexpand.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Dropdown - Ant Design_files/v652eace1692a40cfa3763df669d7439c1639079717194.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/error_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpcs.xml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/theme/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/theme/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/theme/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/theme/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/local/Cellar/php/8.2.7_2/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2ruiVEIMQdt6eVVTpfwLI1ygXyY" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/edenlab/wp-content/themes/edenlab/assets/fonts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php.debug",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/fonts" />
+      <recent name="$PROJECT_DIR$/template-parts" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="302053f1-dc7b-472b-88df-37edf211ae25" name="Changes" comment="" />
+      <created>1737415382162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737415382162</updated>
+      <workItem from="1737415383387" duration="133000" />
+      <workItem from="1737415523619" duration="105000" />
+      <workItem from="1737415722144" duration="55000" />
+      <workItem from="1737415788710" duration="415000" />
+      <workItem from="1737872476156" duration="6242000" />
+      <workItem from="1738613188242" duration="804000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -2169,4 +2169,9 @@ form .check .wpcf7-not-valid-tip {
   border-radius: 0;
 }
 
+.new_home #head_slide .content {
+  text-align: center;
+  padding: 230px 0 140px 0;
+}
+
 /*# sourceMappingURL=styles.css.map */

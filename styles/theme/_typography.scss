@@ -4,6 +4,21 @@
 }
 
 @font-face {
+    font-family: CriteriaCFLite;
+    src: url('../assets/fonts/Criteriacf-light.otf');
+}
+
+@font-face {
+    font-family: CriteriaCFExtraLite;
+    src: url('../assets/fonts/Criteriacf-extralight.otf');
+}
+
+@font-face {
+    font-family: CriteriaCFBold;
+    src: url('../assets/fonts/Criteriacf-bold.otf');
+}
+
+@font-face {
     font-family: ArialNew;
     src: url('../assets/fonts/Arial.ttf');
 }
@@ -27,6 +42,10 @@ h1 {
             font-size: 30px;
         }
     }
+}
+
+strong {
+    font-family: CriteriaCFBold, sans-serif;
 }
 
 h2 {

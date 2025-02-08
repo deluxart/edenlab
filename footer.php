@@ -117,54 +117,27 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</div>-->
-
-<div id="auto_banner_whitepapper" class="daModal da-modal-popup exitModal-popup">
-    <div class="da-modal-inner exitModal-inner">
-        <div class="exitModal">
-            <div class="head">
-                <h3>Read more about event-driven FHIR Server with unique configuration options</h3>
-            </div>
-            <div class="row">
-                <div class="img">
-                    <img src="https://kodjin.com/wp-content/uploads/2023/01/wp_image-1.png" alt="" />
-                </div>
-                <div class="form">
-                    <div class="edenlab_contact_from" data-name="wp_suite" data-file="<?php if ( get_field( 'default_wp_file', 'option' ) ) : ?><?php the_field( 'default_wp_file', 'option' ); ?><?php endif; ?>" data-file-name="<?php if ( get_field( 'default_wp_name', 'option' ) ) : ?><?php the_field( 'default_wp_name', 'option' ); ?><?php endif; ?>">
-                        <?php echo do_shortcode('[contact-form-7 id="856" title="Contact form - Promo block"]') ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!--        <div class="webinarModal">-->
+<!--TODO-->
+<!--<div id="auto_banner_whitepapper" class="daModal da-modal-popup exitModal-popup">-->
+<!--    <div class="da-modal-inner exitModal-inner">-->
+<!--        <div class="exitModal">-->
 <!--            <div class="head">-->
-<!--                <h4>Free webinar</h4>-->
+<!--                <h3>Read more about event-driven FHIR Server with unique configuration options</h3>-->
 <!--            </div>-->
-<!--            <div class="subHead">-->
-<!--                <h3>Data quality in healthcare: <br/>How FHIR profiles can help</h3>-->
-<!--                <div>-->
-<!--                    <p>February 8, 2023</p>-->
-<!--                    <p>12:00 PM EST</p>-->
+<!--            <div class="row">-->
+<!--                <div class="img">-->
+<!--                    <img src="https://kodjin.com/wp-content/uploads/2023/01/wp_image-1.png" alt="" />-->
 <!--                </div>-->
-<!--            </div>-->
-<!--            <div class="cont">-->
-<!--                <p>Edenlab team is inviting you to join the upcoming webinar, <br/>orginized by HL7 International</p>-->
-<!--            </div>-->
-<!--            <div class="footModal">-->
-<!--                <div>-->
-<!--                    <a href="/blog/join-our-free-webinar-about-data-quality" id="btnBannerWebinar" class="btn blue"><span>Read more</span><svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                            <path d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14644L27.1716 0.964464C26.9763 0.769202 26.6597 0.769202 26.4645 0.964464C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32842C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.23079 26.9763 8.23079 27.1716 8.03553L30.3536 4.85355ZM4.37114e-08 5L30 5L30 4L-4.37114e-08 4L4.37114e-08 5Z" fill="white"/>-->
-<!--                        </svg>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="logos">-->
-<!--                    <img src="https://kodjin.com/wp-content/uploads/2022/03/edenlab_logo.svg" width="159" height="38" alt="Edenlab" />-->
-<!--                    <img src="https://kodjin.com/wp-content/uploads/2023/01/web_logo_2.png" alt="HL7" />-->
+<!--                <div class="form">-->
+<!--                    <div class="edenlab_contact_from" data-name="wp_suite" data-file="--><?php //if ( get_field( 'default_wp_file', 'option' ) ) : ?><!----><?php //the_field( 'default_wp_file', 'option' ); ?><!----><?php //endif; ?><!--" data-file-name="--><?php //if ( get_field( 'default_wp_name', 'option' ) ) : ?><!----><?php //the_field( 'default_wp_name', 'option' ); ?><!----><?php //endif; ?><!--">-->
+<!--                        --><?php //echo do_shortcode('[contact-form-7 id="856" title="Contact form - Promo block"]') ?>
+<!--                    </div>-->
 <!--                </div>-->
 <!--            </div>-->
 <!--        </div>-->
-        <button class="da-modal-close exitModal-close"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/close_icon.svg" alt=""></button>
-    </div>
-</div>
+<!--        <button class="da-modal-close exitModal-close"><img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/close_icon.svg" alt=""></button>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 <!-- <div class="cookies-info js-cookies-info">
@@ -352,6 +325,11 @@
 
 <script>
     jQuery(function() {
+
+      if (window.location.hostname === 'edenlab.local') {
+        return;
+      }
+
         jQuery.exitIntent('enable');
         setInterval(function(){
             jQuery(document).bind('exitintent', function() {

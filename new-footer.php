@@ -361,6 +361,72 @@
     });
 </script>
 
+
+<script>
+  jQuery(document).ready(function ($) {
+    var showChar = 300; // Количество символов, показываемых по умолчанию
+    var ellipsestext = "...";
+    var moretext = "Read more";
+    var lesstext = "Read less";
+
+    $(".more").each(function () {
+      var content = $(this).html().trim();
+      var div = $("<div/>").html(content); // Создаем временный контейнер для работы с HTML
+
+      var totalLength = 0;
+      var showHTML = "";
+      var hiddenHTML = "";
+      var isHidden = false;
+
+      div.contents().each(function () {
+        if (!isHidden) {
+          var textLength = $(this).text().length;
+          if (totalLength + textLength > showChar) {
+            isHidden = true;
+            var cutText = $(this).text().substr(0, showChar - totalLength); // Обрезаем текст без удаления тега
+            showHTML += $("<span/>").text(cutText).html(); // Используем <span>
+            hiddenHTML += $("<span/>").text($(this).text().substr(cutText.length)).html(); // Используем <span>
+          } else {
+            showHTML += $("<span/>").html($(this).prop("outerHTML")).html();
+          }
+          totalLength += textLength;
+        } else {
+          hiddenHTML += $("<span/>").html($(this).prop("outerHTML")).html();
+        }
+      });
+
+      if (hiddenHTML.length > 0) {
+        var html = `
+                <span class="show-text">${showHTML}</span>
+                <span class="moreellipses">${ellipsestext}&nbsp;</span>
+                <span class="morecontent" style="display: none;">${hiddenHTML}</span>
+               <a href="#" class="morelink">${moretext}</a>
+            `;
+        $(this).html(html);
+      }
+    });
+
+    $(document).on("click", ".morelink", function (e) {
+      e.preventDefault();
+      e.stopPropagation(); // Останавливаем всплытие события
+
+      var $this = $(this);
+      var $container = $this.closest(".more");
+
+      $container.find(".moreellipses").toggle();
+      $container.find(".morecontent").stop(true, true).fadeToggle(300); // Добавляем stop()
+
+      if ($this.hasClass("less")) {
+        $this.removeClass("less").text(moretext);
+      } else {
+        $this.addClass("less").text(lesstext);
+      }
+    });
+  });
+</script>
+
+
+
 <!--/js/fm.revealator.jquery.js-->
 <script src="<?php echo get_bloginfo('template_url') ?>/js/fm.revealator.jquery.js?11"></script>
 <script src="https://www.youtube.com/player_api"></script>

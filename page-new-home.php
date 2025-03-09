@@ -40,7 +40,9 @@ include('new-header.php');
                     <div>
                         <?php if ( have_rows( 'software_how_do_we_act' ) ) : ?>
                             <?php while ( have_rows( 'software_how_do_we_act' ) ) : the_row(); ?>
-                                <h4><?php the_sub_field( 'side_title' ); ?></h4>
+                                <div>
+                                  <h4 class="dark"><?php the_sub_field( 'side_title' ); ?></h4>
+                                </div>
                                 <?php if ( have_rows( 'action_list' ) ) : ?>
                                 <div class="we_act_list">
                                     <?php while ( have_rows( 'action_list' ) ) : the_row(); ?>
@@ -52,7 +54,16 @@ include('new-header.php');
                                                 </svg>
                                             </div>
                                             <h3><?php the_sub_field( 'title' ); ?></h3>
-                                            <?php the_sub_field( 'description' ); ?>
+
+                                            <?php
+                                            $full_text = get_sub_field('description');
+                                            ?>
+                                          <div class="more">
+                                              <?php echo $full_text; ?>
+                                          </div>
+
+
+
                                         </div>
                                     <?php endwhile; ?>
                                 </div>
@@ -69,7 +80,9 @@ include('new-header.php');
                     <div>
                         <?php if ( have_rows( 'software_shallenges_we_solve' ) ) : ?>
                             <?php while ( have_rows( 'software_shallenges_we_solve' ) ) : the_row(); ?>
-                                <h4><?php the_sub_field( 'side_title' ); ?></h4>
+                                <div>
+                                  <h4 class="dark"><?php the_sub_field( 'side_title' ); ?></h4>
+                                </div>
                                 <?php if ( have_rows( 'list_of_problems' ) ) : ?>
                                 <div class="we_solve_list">
                                     <?php while ( have_rows( 'list_of_problems' ) ) : the_row(); ?>
@@ -338,15 +351,18 @@ include('new-header.php');
 
 
       <section id="cases">
-        <div class="title">
-          <h2 class="revealator-slideup revealator-duration7 revealator-once revealator-below"><?php the_field( 'section_title_cs' ); ?></h2>
-          <a href="<?php echo get_home_url(); ?>/cases" class="more revealator-slideup revealator-duration7 revealator-once revealator-below">
-            <span>Check all cases</span>
-            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15.7782 8.49985L16.6621 9.38374C17.1502 8.89558 17.1502 8.10413 16.6621 7.61597L15.7782 8.49985ZM8.17678 2.66622L14.8943 9.38374L16.6621 7.61597L9.94454 0.898456L8.17678 2.66622ZM14.8943 7.61597L7.82322 14.687L9.59099 16.4548L16.6621 9.38374L14.8943 7.61597ZM15.7782 7.24985H0.221826V9.74985H15.7782V7.24985Z" fill="#081123"/>
-            </svg>
-          </a>
+        <div class="container">
+          <div class="title">
+            <h2 class="revealator-slideup revealator-duration7 revealator-once revealator-below">Value delivered to our clients</h2>
+            <a href="<?php echo get_home_url(); ?>/cases" class="more revealator-slideup revealator-duration7 revealator-once revealator-below">
+              <span>Check all cases</span>
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7782 8.49985L16.6621 9.38374C17.1502 8.89558 17.1502 8.10413 16.6621 7.61597L15.7782 8.49985ZM8.17678 2.66622L14.8943 9.38374L16.6621 7.61597L9.94454 0.898456L8.17678 2.66622ZM14.8943 7.61597L7.82322 14.687L9.59099 16.4548L16.6621 9.38374L14.8943 7.61597ZM15.7782 7.24985H0.221826V9.74985H15.7782V7.24985Z" fill="#081123"/>
+              </svg>
+            </a>
+          </div>
         </div>
+          <?php echo do_shortcode('[case-reviews cats="healthcare"]') ?>
         <div class="content">
             <?php echo do_shortcode('[cases-list-home cats="healthcare"]') ?>
         </div>

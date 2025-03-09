@@ -684,6 +684,7 @@
                 width: 50%;
                 top: 50%;
                 transform: translateY(-50%);
+                display: flex;
 
                 @media (max-width: $tb_bp) {
                     transform: none;
@@ -695,7 +696,8 @@
 
                 img {
                     margin: 0 0 0 auto;
-                    max-width: 100%;
+                    max-width: 700px;
+                    width: 100%;
                 }
             }
 

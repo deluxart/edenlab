@@ -189,12 +189,6 @@ function cases_listing_home_shortcode( $atts ) {
             get_template_part( 'template-parts/case-card-home', get_post_format() );
         endwhile;
 
-//        while ( $query->have_posts() ) : $query->the_post(); $ch++; ?>
-<!--            <div class="revealator-slideup revealator-duration7 revealator-once revealator-below revealator-delay--><?php //echo $ch; ?><!--">-->
-<!--            --><?php //get_template_part( 'template-parts/case-card-home', get_post_format() ); ?>
-<!--            --><?php //echo '</div>';
-//        endwhile;
-
         wp_reset_postdata();
         $myvariable = ob_get_clean();
         return $myvariable;
@@ -238,5 +232,52 @@ function cases_listing_nav_shortcode( $atts ) {
     }
 }
 add_shortcode( 'cases-list-nav', 'cases_listing_nav_shortcode' );
+
+
+
+// UPDATE 2025
+function case_reviews_shortcode( $atts ) {
+    ob_start();
+
+    $args = shortcode_atts( array (
+        'type'  => 'case',
+        'posts' => 3,
+        'cats'  => '',
+    ), $atts );
+
+    $options = array(
+        'post_type'      => $args['type'],
+        'posts_per_page' => $args['posts'],
+        'tax_query'      => array(
+            array(
+                'taxonomy' => 'case',
+                'field'    => 'slug',
+                'terms'    => explode(',', $args['cats']),
+                'operator' => 'IN',
+            )
+        ),
+    );
+
+    $query = new WP_Query( $options );
+
+    if ( $query->have_posts() ) {
+        echo '<div class="case-reviews">';
+          echo '<div class="container">';
+            echo '<div class="case-reviews__cards">';
+              while ( $query->have_posts() ) : $query->the_post();
+                  get_template_part( 'template-parts/case-card-review', get_post_format() );
+              endwhile;
+            echo '</div>';
+          echo '</div>';
+        echo '</div>'; // .case-reviews
+
+        wp_reset_postdata();
+    }
+
+    return ob_get_clean();
+}
+add_shortcode( 'case-reviews', 'case_reviews_shortcode' );
+
+
 
 ?>
